@@ -1,0 +1,90 @@
+.swiper-slide {
+  flex-shrink: 0;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-wrapper {
+  display: flex;
+  box-sizing: content-box;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+}
+
+.swiper-navigation {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 24px 0;
+  width: 272px;
+}
+
+.swiper-pagination-bullet {
+  background: #d3d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  margin: 14px 8px;
+  width: 14px;
+}
+
+.uil.swiper-button-prev,
+.uil.swiper-button-next {
+  background-color:#ffffff;
+  border-radius: 50%;
+  color: #0a0a07;
+}
+.uil.swiper-button-disabled {
+  background-color: #d3d3d3;
+  color: #808080
+}
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+
+.swiper-container-horizontal .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  white-space: nowrap;
+}
+.swiper-container-horizontal .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms left;
+}
+.swiper-container-horizontal.swiper-container-rtl .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #67c4e2;
+}
