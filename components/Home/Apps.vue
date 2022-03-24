@@ -3,7 +3,7 @@
     <div :class="$style.css_home_apps_content">
       <Title text="Aplicativos" center="true"/>
       <div :class="$style.css_home_apps_items">
-        <a v-for="($, i) in $store.state.lists.apps" :href="$.to" :key="i">
+        <a v-for="($, i) in $store.state.lists.apps" :href="$.to" :key="i" target="_blank">
           <div :class="$style.css_home_apps_item">
             <i :class="[`uil-${$.icon}`]"/>
             <h4>{{ $.title }}</h4>
