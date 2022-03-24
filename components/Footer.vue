@@ -13,7 +13,7 @@ footer.i-footer(id="footer")
     section
       label NOS UBICAMOS
       span Cra. 29 # 27-149, Turbaco – Bolívar 
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=10.339411%2C%20-75.419144&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="10.339411, -75.419144"></iframe>
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=10.339411%2C%20-75.419144&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" aria-label="10.339411, -75.419144"></iframe>
     section
       Icon(@click="scrollTop()" name="angle-up" title="Ir arriba")
 
@@ -85,6 +85,7 @@ export default {
   font-size: 14px;
 }
 .i-footer__content section iframe {
+  min-height: 192px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
