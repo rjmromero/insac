@@ -8,7 +8,7 @@ section.i-home__licenses(id="licenses")
         img(:src="$.img")
         h4 {{ $.title }}
         p {{ $.body }}
-        Button(@click="open($.to)" text="Comprar" category="secondary")
+        Button(@click="open($.to)" text="Contactar" category="secondary")
 </template>
 
 <script>

@@ -2,6 +2,7 @@
   <div>
     <HomeHeader/>
     <HomeFeatured/>
+    <HomeApps/>
     <HomeSoftwars/>
     <HomeLicenses/>
     <HomeServices/>
