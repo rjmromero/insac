@@ -59,6 +59,10 @@ export default {
     { src: '~assets/css/swiper.css', lang: 'css' },
     { src: '~assets/css/unicons.css', lang: 'css' }
   ],
+  googleAnalytics: {
+    id: "UA-164825100-1",
+    dev: false
+  },
   plugins: [
   ],
   components: true,
@@ -66,6 +70,7 @@ export default {
   ],
   modules: [
     '@nuxtjs/onesignal',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
     '@nuxtjs/axios',

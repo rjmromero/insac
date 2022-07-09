@@ -7,7 +7,7 @@
           <div :class="$style.css_home_apps_item">
             <i :class="[`uil-${$.icon}`]"/>
             <h4>{{ $.title }}</h4>
-            <Link text="Ver planes" style="pointer-events: none" :to="$.to"/>
+            <label>Ver planes</label>
           </div>
         </a>
       </div>
