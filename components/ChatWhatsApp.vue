@@ -8,20 +8,23 @@ div.i-chat-whatsapp
           h4 Inicia una conversación
           p Comunicate con alguno de nuestros departamentos
       ul
-        li
-          span A
-          Link(text="Administración" to="http://wa.me/573154114815")
-        li
-          span C
-          Link(text="Comercial" to="http://wa.me/573104900822")
-        li
-          span S
-          Link(text="Soporte" to="http://wa.me/573183355032")
+        nuxt-link(to="/chat/administracion" target="_blank")
+          li
+            span Administración
+            Icon(name="arrow-right" style="pointer-events: none")
+        nuxt-link(to="/chat/comercial" target="_blank")
+          li
+            span Comercial
+            Icon(name="arrow-right" style="pointer-events: none")
+        nuxt-link(to="/chat/soporte" target="_blank")
+          li
+            span Soporte
+            Icon(name="arrow-right" style="pointer-events: none")
 
     footer.i-chat-whatsapp__footer(:open="drop")
       section
         span(:hidden="spanHidden") ¿Necesitas ayuda?
-      section
+      sectiona
         Icon(@click="drop = !drop" :name="drop ? 'times' : 'whatsapp'")
 </template>
 
@@ -55,6 +58,7 @@ export default {
   max-width: 350px;
   display: grid;
 }
+
 .i-chat-whatsapp__main {
   background-color: var(--white);
   box-shadow: 0 8px 24px -8px rgba(0,0,0,0.24);
@@ -85,29 +89,25 @@ export default {
   font-size: 14px;
   line-height: 18px;
 }
+
 .i-chat-whatsapp__main ul {
-  overflow: hidden;
-  padding: 24px;
+  padding: 8px 0 40px;
 }
 .i-chat-whatsapp__main ul li {
   align-items: center;
+  cursor: pointer;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 1fr 40px;
   gap: 16px;
+  padding: 4px 8px 4px 24px;
 }
-.i-chat-whatsapp__main ul li + li {
-  margin-top: 16px;
+
+.i-chat-whatsapp__main ul li:hover {
+  background-color: var(--graylight);
 }
+
 .i-chat-whatsapp__main ul li span {
-  background-color: var(--yellow) light;
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: 700;
-  height: 40px;
-  line-height: 24px;
-  text-align: center;
-  padding: 8px;
-  width: 40px;
+  font-size: 16px;
 }
 .i-chat-whatsapp__footer {
   align-items: center;

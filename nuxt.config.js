@@ -73,8 +73,7 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
-    '@nuxtjs/axios',
-    "@nuxtjs/svg"
+    '@nuxtjs/axios'
   ],
 
   oneSignal: {
