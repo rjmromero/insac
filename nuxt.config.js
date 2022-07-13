@@ -60,7 +60,7 @@ export default {
     { src: '~assets/css/unicons.css', lang: 'css' }
   ],
   googleAnalytics: {
-    id: "UA-164825100-1",
+    id: "G-00FXZE54XX",
     dev: false
   },
   plugins: [
